@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="component-styles/header.css">
-    <link rel="stylesheet" href="component-styles/homeContent.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../component-styles/header.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../component-styles/socialRow.css">
 </head>
 <body>
 
@@ -18,17 +19,23 @@
         <div id="homeWrapper">
             
             <div id="header"></div>
-            <div id="homeContent"></div>
-
+            <section>
+                <h1>Hey!</h1>
+                <p>Feel free to reach out via <a href="mailto:hello@rosveluz.com">hello@rosveluz.com</a>.</p>
+            </section>
+            <div class="social-row"></div>
+        
         </div>
         
     </div>
     <script type="module">
-        import { loadHeader } from './components/header.js';
-        import { loadHomeContent } from './components/homeContent.js'; // ✅ import your carousel module
+        import { loadHeader } from '../components/header.js';
+        import { loadSocialRow } from '../components/socialRow.js';
       
         loadHeader();
-        loadHomeContent(); // ✅ render the carousel
+        loadSocialRow();
     </script>
+      
+      
 </body>
 </html>
